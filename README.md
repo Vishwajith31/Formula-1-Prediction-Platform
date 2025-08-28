@@ -75,15 +75,11 @@ Target: InPoints (Top 10 finish binary classification)
 *Sample decision tree structure from trained Random Forest model*
 
 ### Strategic Analysis
-![Pit Strategy Analysis](visualizations/strategic_analysis/pit_stop_analysis.png)  
+![Pit Strategy Analysis](visualizations/strategic_analysis/finishing_position_vs_pitstops.png)  
 *Analysis of relationship between pit stop frequency and race outcomes*
 
-![Undercut Effectiveness](visualizations/strategic_analysis/undercut_success_rates.png)
+![Undercut Effectiveness](visualizations/strategic_analysis/undercut_success_failure.png)
 *Success rates of undercut attempts in head-to-head battles*
-
-### General Analysis
-![Race Performance Overview](visualizations/figures/race_performance_overview.png)
-*Comprehensive overview of driver and team performance metrics*
 
 ### Model Results
 See detailed model performance metrics in: [`results/model_results_summary.csv`](results/model_results_summary.csv)
