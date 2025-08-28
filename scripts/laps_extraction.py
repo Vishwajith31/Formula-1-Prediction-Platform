@@ -3,7 +3,7 @@ import pandas as pd
 import time
 
 # Set your FastF1 cache location
-fastf1.Cache.enable_cache('/Users/vishwajithsomarampet/Library/Caches/fastf1')
+fastf1.Cache.enable_cache('your_path')
 fastf1.ergast.interface.BASE_URL = "https://api.jolpi.ca/ergast/f1"
 
 lap_rows = []
