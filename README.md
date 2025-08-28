@@ -83,7 +83,38 @@ Target: InPoints (Top 10 finish binary classification)
 ## 📁 Project Structure
 
 ```bash
-f1-analytics/ ├── data/ │   ├── raw/                    # FastF1 extracted telemetry data │   └── processed/              # Engineered features and cleaned datasets ├── src/ │   ├── data_extraction.py      # FastF1 API interface and data collection │   ├── feature_engineering.py  # Custom F1 metrics and transformations │   ├── models/                 # ML model definitions and training scripts │   └── analysis/               # Strategic analysis modules (pit strategy, etc.) ├── notebooks/ │   ├── 01_data_exploration.ipynb │   ├── 02_feature_engineering.ipynb │   ├── 03_ml_modeling.ipynb │   └── 04_pit_strategy_analysis.ipynb ├── visualizations/             # Generated charts and analysis plots ├── requirements.txt            # Project dependencies ├── .gitignore                 # Version control exclusions └── README.md                  # Project documentation
+F1-DATA-ANALYSIS-PROJECT/
+├── app/
+│   ├── .ipynb_checkpoints/
+│   └── streamlit_app.py              # Interactive dashboard application
+├── data/
+│   ├── .ipynb_checkpoints/
+│   ├── archive/                      # Historical data backups
+│   ├── cleaned/                      # Processed race data
+│   └── features/                     # Engineered feature datasets
+├── models/
+│   ├── .ipynb_checkpoints/
+│   └── random_forest_f1.pkl          # Trained model artifacts
+├── notebooks/
+│   ├── .ipynb_checkpoints/
+│   ├── cleanenv/
+│   ├── 01_data_overview.ipynb        # Initial data exploration
+│   ├── 02_driver_team_analysis.ipynb # Driver and team performance analysis
+│   ├── 03_ml_prediction.ipynb       # Machine learning modeling
+│   └── xgboost_tree_plot.png        # Model visualization
+├── results/
+│   └── model_results_summary.csv    # Model performance metrics
+├── scripts/
+│   ├── .ipynb_checkpoints/
+│   ├── build_season_features.py     # Feature engineering pipeline
+│   └── laps_extraction.py           # Data extraction from FastF1
+├── visualizations/
+│   ├── .ipynb_checkpoints/
+│   ├── figures/                     # General analysis plots
+│   ├── model_visualisations/        # ML model performance charts
+│   └── strategic_analysis/          # Pit strategy and tactical insights
+├── .gitignore                       # Version control exclusions
+└── requirements.txt                 # Project dependencies
 
 ```
 
@@ -92,16 +123,20 @@ f1-analytics/ ├── data/ │   ├── raw/                    # Fast
 ## 🛠️ Technology Stack
 
 **Data Processing:**
-- pandas, NumPy - Data manipulation and analysis
-- FastF1 - F1 telemetry and timing data access
+- FastF1 - F1 telemetry and timing data (`laps_extraction.py`)
+- pandas, NumPy - Data manipulation (`build_season_features.py`)
 
 **Machine Learning:**
 - scikit-learn - ML algorithms and evaluation
 - XGBoost - Gradient boosting models
+- Random Forest, XGBoost - Classification models
+- Model persistence with pickle (`random_forest_f1.pkl`)
 
 **Visualization:**
 - matplotlib, seaborn - Statistical plotting
 - plotly - Interactive visualizations (planned)
+- Jupyter Notebooks - Interactive development environment
+- Custom visualization pipeline organized by analysis type
 
 **Deployment (Planned):**
 - Streamlit - Interactive dashboard
