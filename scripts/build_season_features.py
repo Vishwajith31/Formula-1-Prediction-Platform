@@ -4,7 +4,7 @@ import signal
 import time
 
 # Enable FastF1 cache (update with your preferred path)
-fastf1.Cache.enable_cache('/Users/vishwajithsomarampet/Library/Caches/fastf1') 
+fastf1.Cache.enable_cache('your_path') 
 
 # Point FastF1 at jolpica-f1 API for results (replace Ergast)
 fastf1.ergast.interface.BASE_URL = "https://api.jolpi.ca/ergast/f1"
