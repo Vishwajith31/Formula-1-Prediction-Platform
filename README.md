@@ -68,15 +68,26 @@ Target: InPoints (Top 10 finish binary classification)
 ## 📊 Key Visualizations
 
 ### Model Performance Analysis
-![Feature Importance](visualizations/feature_importance.png)
-*XGBoost classifier reveals grid position and team as strongest predictors, with strategic factors providing additional lift*
+![Feature Importance](visualizations/model_visualisations/feature_importance.png)
+*XGBoost classifier reveals grid position and team as strongest predictors*
 
-### Strategic Insights
-![Pit Strategy Impact](visualizations/finishing_position_vs_pitstops.png)  
-*Analysis of relationship between pit stop frequency and race finishing positions*
+![XGBoost Decision Tree](notebooks/xgboost_tree_plot.png)
+*Sample decision tree structure from trained Random Forest model*
 
-![Undercut Effectiveness](visualizations/undercut_success_failure.png)
-*Success rates of undercut attempts in head-to-head pit strategy battles*
+### Strategic Analysis
+![Pit Strategy Analysis](visualizations/strategic_analysis/pit_stop_analysis.png)  
+*Analysis of relationship between pit stop frequency and race outcomes*
+
+![Undercut Effectiveness](visualizations/strategic_analysis/undercut_success_rates.png)
+*Success rates of undercut attempts in head-to-head battles*
+
+### General Analysis
+![Race Performance Overview](visualizations/figures/race_performance_overview.png)
+*Comprehensive overview of driver and team performance metrics*
+
+### Model Results
+See detailed model performance metrics in: [`results/model_results_summary.csv`](results/model_results_summary.csv)
+
 
 ---
 
